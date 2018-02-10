@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowSemiCondensed-Medium.ttf">
+            <string>BarlowSemiCondensed-Medium</string>
+        </array>
+        <array key="BarlowSemiCondensed-SemiBold.ttf">
+            <string>BarlowSemiCondensed-SemiBold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GPAlertView" customModule="GPAlertController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="515" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FEu-QT-mlW">
+                    <rect key="frame" x="10" y="15" width="515" height="186"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh6-lK-U3f">
+                            <rect key="frame" x="-10" y="0.0" width="515" height="28"/>
+                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN0-iu-FSU">
+                            <rect key="frame" x="0.0" y="168.5" width="515" height="17.5"/>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-F9-mMr">
+                    <rect key="frame" x="0.0" y="216" width="515" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-6V-cl4">
+                            <rect key="frame" x="0.0" y="0.0" width="257.5" height="46"/>
+                            <color key="backgroundColor" red="0.91002213954925537" green="0.2339363694190979" blue="0.20242750644683838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tapFirstButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dzt-VL-Ej1"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r5-BW-Whx">
+                            <rect key="frame" x="257.5" y="0.0" width="1" height="46"/>
+                            <color key="backgroundColor" red="0.029943738132715225" green="0.16474875807762146" blue="0.32458019256591797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="VXy-MF-hxO"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-IE-Yrl">
+                            <rect key="frame" x="257.5" y="0.0" width="257.5" height="46"/>
+                            <color key="backgroundColor" red="0.91002213954925537" green="0.2339363694190979" blue="0.20242750644683838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tapSecondButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="xba-xP-7Fx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hs2-6V-cl4" firstAttribute="width" secondItem="MIZ-IE-Yrl" secondAttribute="width" id="iS3-hK-LVt"/>
+                        <constraint firstAttribute="height" constant="46" id="zcM-eL-FOF"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOl-k3-GKv">
+                    <rect key="frame" x="0.0" y="216" width="515" height="1"/>
+                    <color key="backgroundColor" red="0.03353717178106308" green="0.18435811996459961" blue="0.36056366562843323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Qot-w8-a5x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.029572194442152977" green="0.18436306715011597" blue="0.36056798696517944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EOl-k3-GKv" firstAttribute="top" secondItem="KJk-F9-mMr" secondAttribute="top" id="FhX-Iq-bJY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FEu-QT-mlW" secondAttribute="trailing" constant="10" id="RoW-5X-2yd"/>
+                <constraint firstItem="FEu-QT-mlW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Th7-XZ-pd8"/>
+                <constraint firstItem="EOl-k3-GKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dBf-dU-SMm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EOl-k3-GKv" secondAttribute="trailing" id="iG5-jD-uN6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KJk-F9-mMr" secondAttribute="bottom" id="kVR-Ar-xdZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KJk-F9-mMr" secondAttribute="trailing" id="qcT-iB-hey"/>
+                <constraint firstItem="KJk-F9-mMr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s01-km-9cn"/>
+                <constraint firstItem="KJk-F9-mMr" firstAttribute="top" secondItem="FEu-QT-mlW" secondAttribute="bottom" constant="15" id="tan-Ok-sfR"/>
+                <constraint firstItem="FEu-QT-mlW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="wfV-BT-dM9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonsSeparatorView" destination="4r5-BW-Whx" id="xyS-7k-kL3"/>
+                <outlet property="detailLabel" destination="VN0-iu-FSU" id="gu2-D8-yHK"/>
+                <outlet property="firstButton" destination="hs2-6V-cl4" id="0lG-uU-gpc"/>
+                <outlet property="secondButton" destination="MIZ-IE-Yrl" id="aZ6-Wp-u36"/>
+                <outlet property="titleLabel" destination="Xh6-lK-U3f" id="tWF-vZ-bs2"/>
+                <outlet property="topSeparatorView" destination="EOl-k3-GKv" id="ego-38-46l"/>
+            </connections>
+            <point key="canvasLocation" x="103.5" y="-149"/>
+        </view>
+    </objects>
+</document>
