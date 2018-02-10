@@ -79,7 +79,7 @@
 		CB07CDBD202FA1530075D1FC /* GPAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				CB07CDBF202FA1530075D1FC /* Info.plist */,
+				CB3AFDD5202FA8240014B5EC /* Supporting Files */,
 				CBE599E4202FA287009D8B4D /* GPAlertController.swift */,
 				CBE599EA202FA6A0009D8B4D /* GPAlertAction.swift */,
 				CBE599E6202FA323009D8B4D /* GPAlertView.swift */,
@@ -96,6 +96,14 @@
 				CB07CDCB202FA1530075D1FC /* Info.plist */,
 			);
 			path = GPAlertControllerTests;
+			sourceTree = "<group>";
+		};
+		CB3AFDD5202FA8240014B5EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB07CDBF202FA1530075D1FC /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
