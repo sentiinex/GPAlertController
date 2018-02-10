@@ -14,4 +14,5 @@ A pod for custom alert controllers. I'll update this in a bit.
   s.source        = { :git => "https://github.com/sentiinex/GPAlertController.git", :tag => "#{s.version}" }
   s.framework  = "UIKit"
   s.source_files  = "GPAlertController/**/*.{swift}"
+  s.resources = "GPAlertController/**/*.{xib}"
 end

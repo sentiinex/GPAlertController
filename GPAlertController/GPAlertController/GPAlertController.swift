@@ -69,7 +69,7 @@ open class GPAlertController: UIViewController {
         alertView.center = view.center
     }
     
-    func addAction(_ action: GPAlertAction) {
+    open func addAction(_ action: GPAlertAction) {
         if !isFirstActionCustom {
             firstAction = action
             isFirstActionCustom = true
