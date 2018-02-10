@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A pod for custom alert controllers."
   s.description  = <<-DESC
+A pod for custom alert controllers. I'll update this in a bit.
                    DESC
   s.homepage        = "https://github.com/sentiinex/GPAlertController"
   # s.screenshots   = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
