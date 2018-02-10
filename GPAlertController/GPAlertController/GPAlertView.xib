@@ -49,7 +49,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-6V-cl4">
                             <rect key="frame" x="0.0" y="0.0" width="257.5" height="46"/>
-                            <color key="backgroundColor" red="0.91002213954925537" green="0.2339363694190979" blue="0.20242750644683838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,14 +60,14 @@
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r5-BW-Whx">
                             <rect key="frame" x="257.5" y="0.0" width="1" height="46"/>
-                            <color key="backgroundColor" red="0.029943738132715225" green="0.16474875807762146" blue="0.32458019256591797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="1" id="VXy-MF-hxO"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-IE-Yrl">
                             <rect key="frame" x="257.5" y="0.0" width="257.5" height="46"/>
-                            <color key="backgroundColor" red="0.91002213954925537" green="0.2339363694190979" blue="0.20242750644683838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,7 +91,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.029572194442152977" green="0.18436306715011597" blue="0.36056798696517944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="EOl-k3-GKv" firstAttribute="top" secondItem="KJk-F9-mMr" secondAttribute="top" id="FhX-Iq-bJY"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FEu-QT-mlW" secondAttribute="trailing" constant="10" id="RoW-5X-2yd"/>

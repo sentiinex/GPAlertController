@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-
-open class SFAlertController: UIViewController {
+open class GPAlertController: UIViewController {
     
     // MARK: Variables
     private var alertView: GPAlertView?
