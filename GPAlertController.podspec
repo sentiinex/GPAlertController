@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GPAlertController"
-  s.version      = "0.0.1"
+  s.version      = "0.1.1"
   s.summary      = "A pod for custom alert controllers."
   s.description  = <<-DESC
 A pod for custom alert controllers. I'll update this in a bit.
