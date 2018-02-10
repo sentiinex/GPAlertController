@@ -12,6 +12,6 @@ A pod for custom alert controllers. I'll update this in a bit.
   s.author          = { "Gabriele Pregadio" => "sentiinex@gmail.com" }
   s.homepage        = "https://github.com/sentiinex/GPAlertController"
   s.source        = { :git => "https://github.com/sentiinex/GPAlertController.git", :tag => "#{s.version}" }
-  s.framework  = "UIKit", "XCTest"
+  s.framework  = "UIKit"
   s.source_files  = "GPAlertController/**/*.{swift}"
 end

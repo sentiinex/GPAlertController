@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB07CDC5202FA1530075D1FC /* GPAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB07CDBB202FA1530075D1FC /* GPAlertController.framework */; };
-		CB07CDCA202FA1530075D1FC /* GPAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07CDC9202FA1530075D1FC /* GPAlertControllerTests.swift */; };
 		CBE599E5202FA287009D8B4D /* GPAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599E4202FA287009D8B4D /* GPAlertController.swift */; };
 		CBE599E7202FA323009D8B4D /* GPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599E6202FA323009D8B4D /* GPAlertView.swift */; };
 		CBE599E9202FA5D1009D8B4D /* GPAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE599E8202FA5D1009D8B4D /* GPAlertView.xib */; };
@@ -16,22 +14,9 @@
 		CBE599ED202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599EC202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CB07CDC6202FA1530075D1FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB07CDB2202FA1530075D1FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB07CDBA202FA1530075D1FC;
-			remoteInfo = GPAlertController;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CB07CDBB202FA1530075D1FC /* GPAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB07CDBF202FA1530075D1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB07CDC4202FA1530075D1FC /* GPAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB07CDC9202FA1530075D1FC /* GPAlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertControllerTests.swift; sourceTree = "<group>"; };
-		CB07CDCB202FA1530075D1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBE599E4202FA287009D8B4D /* GPAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertController.swift; sourceTree = "<group>"; };
 		CBE599E6202FA323009D8B4D /* GPAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertView.swift; sourceTree = "<group>"; };
 		CBE599E8202FA5D1009D8B4D /* GPAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAlertView.xib; sourceTree = "<group>"; };
@@ -47,14 +32,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB07CDC1202FA1530075D1FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB07CDC5202FA1530075D1FC /* GPAlertController.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				CB07CDBD202FA1530075D1FC /* GPAlertController */,
-				CB07CDC8202FA1530075D1FC /* GPAlertControllerTests */,
 				CB07CDBC202FA1530075D1FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				CB07CDBB202FA1530075D1FC /* GPAlertController.framework */,
-				CB07CDC4202FA1530075D1FC /* GPAlertControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,15 +62,6 @@
 				CBE599EC202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift */,
 			);
 			path = GPAlertController;
-			sourceTree = "<group>";
-		};
-		CB07CDC8202FA1530075D1FC /* GPAlertControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB07CDC9202FA1530075D1FC /* GPAlertControllerTests.swift */,
-				CB07CDCB202FA1530075D1FC /* Info.plist */,
-			);
-			path = GPAlertControllerTests;
 			sourceTree = "<group>";
 		};
 		CB3AFDD5202FA8240014B5EC /* Supporting Files */ = {
@@ -137,24 +103,6 @@
 			productReference = CB07CDBB202FA1530075D1FC /* GPAlertController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CB07CDC3202FA1530075D1FC /* GPAlertControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB07CDD2202FA1530075D1FC /* Build configuration list for PBXNativeTarget "GPAlertControllerTests" */;
-			buildPhases = (
-				CB07CDC0202FA1530075D1FC /* Sources */,
-				CB07CDC1202FA1530075D1FC /* Frameworks */,
-				CB07CDC2202FA1530075D1FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB07CDC7202FA1530075D1FC /* PBXTargetDependency */,
-			);
-			name = GPAlertControllerTests;
-			productName = GPAlertControllerTests;
-			productReference = CB07CDC4202FA1530075D1FC /* GPAlertControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +116,6 @@
 					CB07CDBA202FA1530075D1FC = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
-					};
-					CB07CDC3202FA1530075D1FC = {
-						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -189,7 +133,6 @@
 			projectRoot = "";
 			targets = (
 				CB07CDBA202FA1530075D1FC /* GPAlertController */,
-				CB07CDC3202FA1530075D1FC /* GPAlertControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,13 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE599E9202FA5D1009D8B4D /* GPAlertView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB07CDC2202FA1530075D1FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,23 +160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB07CDC0202FA1530075D1FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB07CDCA202FA1530075D1FC /* GPAlertControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB07CDC7202FA1530075D1FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB07CDBA202FA1530075D1FC /* GPAlertController */;
-			targetProxy = CB07CDC6202FA1530075D1FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CB07CDCD202FA1530075D1FC /* Debug */ = {
@@ -403,36 +323,6 @@
 			};
 			name = Release;
 		};
-		CB07CDD3202FA1530075D1FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BGXZUJFS4J;
-				INFOPLIST_FILE = GPAlertControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sentiinex.GPAlertControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CB07CDD4202FA1530075D1FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BGXZUJFS4J;
-				INFOPLIST_FILE = GPAlertControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sentiinex.GPAlertControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,15 +340,6 @@
 			buildConfigurations = (
 				CB07CDD0202FA1530075D1FC /* Debug */,
 				CB07CDD1202FA1530075D1FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB07CDD2202FA1530075D1FC /* Build configuration list for PBXNativeTarget "GPAlertControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB07CDD3202FA1530075D1FC /* Debug */,
-				CB07CDD4202FA1530075D1FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
