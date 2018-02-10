@@ -28,7 +28,7 @@ A pod for custom alert controllers. I'll update this in a bit.
   # s.tvos.deployment_target = "9.0"
 
   s.source        = { :git => "https://github.com/sentiinex/GPAlertController.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "GPAlertController/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
