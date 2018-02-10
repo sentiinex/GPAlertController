@@ -12,6 +12,8 @@
 		CBE599E5202FA287009D8B4D /* GPAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599E4202FA287009D8B4D /* GPAlertController.swift */; };
 		CBE599E7202FA323009D8B4D /* GPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599E6202FA323009D8B4D /* GPAlertView.swift */; };
 		CBE599E9202FA5D1009D8B4D /* GPAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE599E8202FA5D1009D8B4D /* GPAlertView.xib */; };
+		CBE599EB202FA6A0009D8B4D /* GPAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599EA202FA6A0009D8B4D /* GPAlertAction.swift */; };
+		CBE599ED202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE599EC202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		CBE599E4202FA287009D8B4D /* GPAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertController.swift; sourceTree = "<group>"; };
 		CBE599E6202FA323009D8B4D /* GPAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertView.swift; sourceTree = "<group>"; };
 		CBE599E8202FA5D1009D8B4D /* GPAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAlertView.xib; sourceTree = "<group>"; };
+		CBE599EA202FA6A0009D8B4D /* GPAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertAction.swift; sourceTree = "<group>"; };
+		CBE599EC202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertTransitioningAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 			children = (
 				CB07CDBF202FA1530075D1FC /* Info.plist */,
 				CBE599E4202FA287009D8B4D /* GPAlertController.swift */,
+				CBE599EA202FA6A0009D8B4D /* GPAlertAction.swift */,
 				CBE599E6202FA323009D8B4D /* GPAlertView.swift */,
 				CBE599E8202FA5D1009D8B4D /* GPAlertView.xib */,
+				CBE599EC202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift */,
 			);
 			path = GPAlertController;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE599ED202FA6DA009D8B4D /* GPAlertTransitioningAnimator.swift in Sources */,
 				CBE599E7202FA323009D8B4D /* GPAlertView.swift in Sources */,
 				CBE599E5202FA287009D8B4D /* GPAlertController.swift in Sources */,
+				CBE599EB202FA6A0009D8B4D /* GPAlertAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,7 @@
 
 import UIKit
 
-typealias GPAlertActionHandler = ((GPAlertAction) -> Void)
-open class GPAlertAction: NSObject {
-    var title: String?
-    var handler: GPAlertActionHandler?
-    init(title: String?, handler: GPAlertActionHandler? = nil) {
-        self.title = title
-        self.handler = handler
-    }
-}
+
 
 open class SFAlertController: UIViewController {
     
