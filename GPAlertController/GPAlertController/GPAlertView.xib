@@ -52,10 +52,10 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
                             <state key="normal" title="Button">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="tapFirstButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dzt-VL-Ej1"/>
+                                <action selector="tapFirstButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="f6d-Jh-erA"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r5-BW-Whx">
@@ -70,11 +70,11 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
                             <state key="normal" title="Button">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="tapSecondButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="xba-xP-7Fx"/>
+                                <action selector="tapSeconfButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="NQI-Aw-4O1"/>
                             </connections>
                         </button>
                     </subviews>
