@@ -13,15 +13,13 @@ open class GPAlertController: UIViewController {
     // MARK: Variables
     private var alertView: GPAlertView?
     private lazy var firstAction: GPAlertAction = { [unowned self] in
-        // TODO: Use title defined by user in constants
-        return GPAlertAction(title: "") { _ in
+        return GPAlertAction(title: GPAlertOptions.defaultButtonText) { _ in
             self.dismiss(animated: true)
         }
     }()
     private var secondAction: GPAlertAction?
-    // TODO: Style
     var alertTitle: String?
-    var alertDetail: String?
+    var alertMessage: String?
     private var isFirstActionCustom = false
     override open var modalPresentationStyle: UIModalPresentationStyle {
         get { return .overCurrentContext }
@@ -31,26 +29,24 @@ open class GPAlertController: UIViewController {
         get { return .crossDissolve }
         set {  }
     }
+    open var titleFont = GPAlertOptions.defaultFont.withSize(24)
+    open var titleTextColor = UIColor.white
+    open var messageFont = GPAlertOptions.defaultFont.withSize(15)
+    open var messageTextColor = UIColor.black
     
     // MARK: Init
-    // TODO: Style in init
     public convenience init(title: String?, message: String?) {
         self.init(nibName: nil, bundle: Bundle(for: type(of: self)))
         alertTitle = title
+        alertMessage = message
+        transitioningDelegate = self
     }
     
     // MARK: UIViewController
     override open func viewDidLoad() {
         super.viewDidLoad()
-        providesPresentationContextTransitionStyle = true
-        definesPresentationContext = true
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
-        view.isOpaque = false
-    }
-    
-    open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        prepareView()
+        configureView()
+        configureAlertView()
     }
     
     open override func viewDidLayoutSubviews() {
@@ -59,11 +55,22 @@ open class GPAlertController: UIViewController {
     }
     
     // MARK: Instance methods
-    private func prepareView() {
+    private func configureView() {
+        providesPresentationContextTransitionStyle = true
+        definesPresentationContext = true
+        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6) // TODO: Use custom-defined constant
+        view.isOpaque = false
+    }
+    
+    private func configureAlertView() {
         let nib = UINib(nibName: String(describing: GPAlertView.self), bundle: Bundle(for: GPAlertView.self))
         guard let alertView = nib.instantiate(withOwner: self).first as? GPAlertView else { return } // TODO: Handle error
         alertView.delegate = self
-        alertView.configure(title: alertTitle, message: alertDetail, firstButtonText: firstAction.title, secondButtonText: secondAction?.title)
+        alertView.titleLabel.textColor = titleTextColor
+        alertView.titleLabel.font = titleFont
+        alertView.messageLabel.textColor = messageTextColor
+        alertView.messageLabel.font = messageFont
+        alertView.configure(title: alertTitle, message: alertMessage, firstButtonText: firstAction.title, secondButtonText: secondAction?.title)
         self.alertView = alertView
         view.addSubview(alertView)
         alertView.center = view.center

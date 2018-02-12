@@ -16,7 +16,7 @@ internal protocol GPAlertViewDelegate: class {
 internal class GPAlertView: UIView {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var topSeparatorView: UIView!
     @IBOutlet weak var buttonsSeparatorView: UIView!
     @IBOutlet weak var firstButton: UIButton!
@@ -38,9 +38,9 @@ internal class GPAlertView: UIView {
             titleLabel.text = title
         }
         if message == nil {
-            detailLabel.isHidden = true
+            messageLabel.isHidden = true
         } else {
-            detailLabel.text = message
+            messageLabel.text = message
         }
         firstButton.setTitle(firstButtonText, for: .normal)
         if secondButtonText == nil {
@@ -56,7 +56,7 @@ internal class GPAlertView: UIView {
         delegate?.gpAlertViewDidTapFirstButton(self)
     }
     
-    @IBAction func tapSeconfButton(_ sender: Any) {
+    @IBAction func tapSecondButton(_ sender: Any) {
         delegate?.gpAlertViewDidTapSecondButton(self)
     }
     

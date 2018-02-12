@@ -10,7 +10,7 @@ import UIKit
 
 class GPAlertTransitioningAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    private let transitionDuration: TimeInterval = 0.18 // TODO: Make configurable
+    private let transitionDuration = GPAlertOptions.defaultPresentationAnimationDuration
     static let `default` = GPAlertTransitioningAnimator()
     private override init() { super.init() }
     

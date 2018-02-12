@@ -9,17 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="BarlowSemiCondensed-Medium.ttf">
-            <string>BarlowSemiCondensed-Medium</string>
-        </array>
-        <array key="BarlowSemiCondensed-SemiBold.ttf">
-            <string>BarlowSemiCondensed-SemiBold</string>
-        </array>
-        <array key="SF-Pro-Text-Regular.otf">
-            <string>SFProText-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -31,14 +20,14 @@
                     <rect key="frame" x="10" y="15" width="515" height="186"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh6-lK-U3f">
-                            <rect key="frame" x="-10" y="0.0" width="515" height="28"/>
-                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-Medium" family="Barlow Semi Condensed" pointSize="24"/>
+                            <rect key="frame" x="-10" y="0.0" width="515" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN0-iu-FSU">
-                            <rect key="frame" x="0.0" y="168.5" width="515" height="17.5"/>
-                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                            <rect key="frame" x="0.0" y="168" width="515" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -50,7 +39,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-6V-cl4">
                             <rect key="frame" x="0.0" y="0.0" width="257.5" height="46"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -68,13 +57,12 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-IE-Yrl">
                             <rect key="frame" x="257.5" y="0.0" width="257.5" height="46"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="tapSeconfButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="NQI-Aw-4O1"/>
+                                <action selector="tapSecondButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Uib-Yt-DWg"/>
                             </connections>
                         </button>
                     </subviews>
@@ -108,8 +96,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="buttonsSeparatorView" destination="4r5-BW-Whx" id="xyS-7k-kL3"/>
-                <outlet property="detailLabel" destination="VN0-iu-FSU" id="gu2-D8-yHK"/>
                 <outlet property="firstButton" destination="hs2-6V-cl4" id="0lG-uU-gpc"/>
+                <outlet property="messageLabel" destination="VN0-iu-FSU" id="y2u-0m-qvZ"/>
                 <outlet property="secondButton" destination="MIZ-IE-Yrl" id="aZ6-Wp-u36"/>
                 <outlet property="titleLabel" destination="Xh6-lK-U3f" id="tWF-vZ-bs2"/>
                 <outlet property="topSeparatorView" destination="EOl-k3-GKv" id="ego-38-46l"/>

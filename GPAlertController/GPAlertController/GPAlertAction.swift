@@ -12,7 +12,7 @@ public typealias GPAlertActionHandler = ((GPAlertAction) -> Void)
 open class GPAlertAction: NSObject {
     open var title: String?
     open var handler: GPAlertActionHandler?
-    public init(title: String?, handler: GPAlertActionHandler? = nil) {
+    public init(title: String? = GPAlertOptions.defaultButtonText, handler: GPAlertActionHandler? = nil) {
         self.title = title
         self.handler = handler
     }
